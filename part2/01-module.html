@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../public/favicon.ico" type="image/x-icon">
+  <title>测试script标签中的type属性为module的es6行为</title>
+</head>
+<body>
+  <script src="./src/data.js" type="module"></script>
+  <script type="module">
+    import func from './src/data.js';
+
+    func()
+  </script>
+</body>
+</html>
